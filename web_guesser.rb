@@ -38,14 +38,24 @@ dif = (num1 - num2).abs
 case dif
 when 0
   color = "#00FF00"
-when 1 ..2
-  color = "#33ff00"
-when 3 ..4
+when 1
+  color = "#22ff00"
+when 2
+  color = "#44ff00"
+when 3
 color = "#66ff00"
-when 5 ..7
-color = "#99ff00"
-when 8 .. 12
+when 4
+color = "#88ff00"
+when 5
+color = "#AAff00"
+when 6
+color = "#bbff00"
+when 7
 color = "#ccff00"
+when 8
+color = "#ddff00"
+when 9 .. 12
+color = "#eeff00"
 when 13 .. 17
 color = "#FFFF00"
 when 18 .. 23
@@ -54,9 +64,9 @@ when 24 .. 28
 color = "#ff9900"
 when 29.. 34
 color = "#ff6600"
-when 35 .. 45
-color = "#FF3300"
-when 46 .. 100
+when 35 .. 59
+color = "#FF2200"
+when 60 .. 100
 color = "#FF0000"
 end
 return color
