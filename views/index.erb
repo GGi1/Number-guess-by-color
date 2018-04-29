@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <title> Number Guessing Game</title>
   </head>
-  <body>
+  <body style="background-color: <%= color %>; text-align: center">
     Try to guess a number between 0 and 100: <br/><br/>
     <form class="" action="/" method="get">
       <input type="text" name="guess" value="">
       <input type="submit" name="" value="Submit Guess!">
 
     </form>
-    <p>
-      <%= message %> <hr/>
+  <h1><%= message %> </h1>
+      <hr/>
+        <p>
     Tries:  <%= tries %>
     </p>
 
@@ -22,6 +23,6 @@
 
     </form>
 
-    <div id="secretmessage" style="color: white;">  The secret number is <%= randNum %> </div>
+    <div id="secretmessage" style="color:<%= color %>;">  The secret number is <%= randNum %> </div>
   </body>
 </html>
