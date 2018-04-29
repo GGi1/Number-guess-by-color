@@ -5,8 +5,23 @@
     <title> Number Guessing Game</title>
   </head>
   <body>
+    Try to guess a number between 0 and 100: <br/><br/>
+    <form class="" action="/" method="get">
+      <input type="text" name="guess" value="">
+      <input type="submit" name="" value="Submit Guess!">
+
+    </form>
     <p>
-      The secret number is <%= randNum %>
+      <%= message %> <hr/>
+    Tries:  <%= tries %>
     </p>
+
+    <form class="" action="/" method="get">
+      <input type="hidden" name="resetit" value="reset">
+      <input type="submit" name="" value="Reset">
+
+    </form>
+
+    <div id="secretmessage" style="color: white;">  The secret number is <%= randNum %> </div>
   </body>
 </html>
